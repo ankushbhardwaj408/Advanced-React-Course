@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
-const url = 'https://api.github.com/users';
+const url = "https://api.github.com/users";
 
 // second argument
 
@@ -16,11 +16,11 @@ const UseEffectFetchData = () => {
 
   useEffect(() => {
     getUsers();
-  }, []);
+  });
   return (
     <>
       <h3>github users</h3>
-      <ul className='users'>
+      <ul className="users">
         {users.map((user) => {
           const { id, login, avatar_url, html_url } = user;
           return (
